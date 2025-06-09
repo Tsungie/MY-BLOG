@@ -596,51 +596,14 @@
         /* Decorative elements */
         .decoration {
             position: absolute;
-            opacity: 0.15;
+            opacity: 0.1;
             pointer-events: none;
-            z-index: 1;
         }
 
         .star {
             width: 30px;
             height: 30px;
             color: #7c3aed;
-        }
-
-        .floating-shape {
-            position: absolute;
-            border-radius: 50%;
-            background: linear-gradient(135deg, rgba(124, 58, 237, 0.1), rgba(96, 165, 250, 0.1));
-            animation: float 6s ease-in-out infinite;
-        }
-
-        .floating-shape:nth-child(1) {
-            width: 80px;
-            height: 80px;
-            top: 10%;
-            right: 10%;
-            animation-delay: 0s;
-        }
-
-        .floating-shape:nth-child(2) {
-            width: 60px;
-            height: 60px;
-            bottom: 20%;
-            left: 5%;
-            animation-delay: 2s;
-        }
-
-        .floating-shape:nth-child(3) {
-            width: 40px;
-            height: 40px;
-            top: 60%;
-            right: 25%;
-            animation-delay: 4s;
-        }
-
-        @keyframes float {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-20px); }
         }
 
         /* Modal for full post view */
@@ -697,11 +660,6 @@
 
             .services-grid {
                 grid-template-columns: 1fr;
-                gap: 20px;
-            }
-
-            .service-card {
-                padding: 25px 20px;
             }
 
             .search-filter {
@@ -751,12 +709,8 @@
             </div>
             
             <!-- Decorative elements -->
-            <div class="floating-shape"></div>
-            <div class="floating-shape"></div>
-            <div class="floating-shape"></div>
-            <div class="decoration star" style="top: 20px; right: 100px;">✨</div>
+            <div class="decoration star" style="top: 20px; right: 100px;">⭐</div>
             <div class="decoration star" style="top: 80px; left: 50px;">💫</div>
-            <div class="decoration star" style="bottom: 60px; right: 150px;">🔮</div>
         </header>
 
         <!-- What I Do Section -->
@@ -787,10 +741,17 @@
                 </div>
 
                 <div class="service-card">
+                    <div class="service-tag">Africa Focus</div>
+                    <div class="service-icon">🌍</div>
+                    <h3>Digital Health Consulting</h3>
+                    <p>Help healthcare organizations navigate digital transformation with Africa-specific strategies. Address infrastructure challenges, user adoption hurdles, and sustainability concerns that make or break health tech projects.</p>
+                </div>
+
+                <div class="service-card">
                     <div class="service-tag">Pre-Planning</div>
                     <div class="service-icon">🎯</div>
-                    <h3>Digital Health Consulting</h3>
-                    <p>Strategic pre-implementation guidance for healthcare organizations planning digital transformation. Help identify critical considerations, assess readiness, and establish realistic roadmaps before investing in EHR systems and health technology projects.</p>
+                    <h3>EHR Project Advisory</h3>
+                    <p>Strategic guidance for organizations planning EHR implementations. Help you identify critical considerations, avoid common pitfalls, and establish realistic timelines before investing in healthcare technology systems.</p>
                 </div>
             </div>
         </section>
@@ -846,7 +807,7 @@
                     
                     <div style="margin-bottom: 30px;">
                         <a href="https://your-cv-link-here.com" target="_blank" class="cta-button" style="margin-right: 0; width: 100%; text-align: center;">
-                            📄 View My CV Online
+                            📄 Download My Full CV
                         </a>
                     </div>
                     
